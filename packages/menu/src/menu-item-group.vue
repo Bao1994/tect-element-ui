@@ -23,17 +23,17 @@
     },
     data() {
       return {
-        paddingLeft: 20
+        paddingLeft: 30
       };
     },
     computed: {
       levelPadding() {
-        let padding = 20;
+        let padding = 30;
         let parent = this.$parent;
-        if (this.rootMenu.collapse) return 20;
+        if (this.rootMenu.collapse) return 30;
         while (parent && parent.$options.componentName !== 'ElMenu') {
           if (parent.$options.componentName === 'ElSubmenu') {
-            padding += 20;
+            padding += 30;
           }
           parent = parent.$parent;
         }
