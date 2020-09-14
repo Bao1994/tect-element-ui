@@ -30,7 +30,7 @@
         :class="[
           { 'is-leaf': node.isLeaf, expanded: !node.isLeaf && expanded },
           'el-tree-node__expand-icon',
-          tree.iconClass ? tree.iconClass : 'el-icon-caret-right'
+          tree.iconClass ? tree.iconClass : 'el-icon-arrow-down'
         ]"
       >
       </span>
